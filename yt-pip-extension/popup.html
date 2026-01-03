@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 YouTube PiP</h1>
+    
+    <div class="toggle-group">
+      <label class="toggle">
+        <span>Extension Enabled</span>
+        <input type="checkbox" id="enabled" checked>
+        <span class="slider"></span>
+      </label>
+
+      <label class="toggle">
+        <span>Auto-enter PiP on tab switch</span>
+        <input type="checkbox" id="autoEnter" checked>
+        <span class="slider"></span>
+      </label>
+
+      <label class="toggle">
+        <span>Auto-exit PiP on return</span>
+        <input type="checkbox" id="autoExit" checked>
+        <span class="slider"></span>
+      </label>
+
+      <label class="toggle">
+        <span>Keyboard shortcut (Alt+P)</span>
+        <input type="checkbox" id="keyboardShortcut" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="shortcut-info">
+      <p>⌨️ Press <kbd>Alt</kbd> + <kbd>P</kbd> to toggle PiP</p>
+    </div>
+
+    <div class="status" id="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
